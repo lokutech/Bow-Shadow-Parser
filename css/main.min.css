@@ -25,74 +25,81 @@ body {
   width: 800px;
   text-align: center;
   background-color: #f3f3f3;
+  font-family: 'Lato', sans-serif;
 }
 
-h1, h2, h3 {
-  margin-bottom: 30px;
+h1 {
+  margin-bottom: 50px 0;
+  padding-bottom: 50px;
+  font-family: Lato;
+  font-style: italic;
 }
 
-p {
-  position: relative !important;
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  margin-bottom: auto !important;
-  -webkit-box-align: end !important;
-      -ms-flex-align: end !important;
-          align-items: flex-end !important;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-  height: 60px;
+#input {
+  font-family: inherit;
+  width: 400px;
+  height: 40px;
+  border: 1px solid #ccc;
+  font-size: 0.9rem;
+  padding: 0 10px;
+  margin-right: 5px;
 }
 
-thead {
-  visibility: hidden;
-}
-
-.show {
-  visibility: visible;
+button {
+  font-family: inherit;
+  font-weight: bold;
+  font-style: italic;
+  width: 80px;
+  height: 40px;
+  background-color: #42a4f5da;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-left: 5px;
 }
 
 table {
   border-collapse: collapse;
-  margin: 25px;
-  -webkit-box-shadow: 15px sandybrown;
-          box-shadow: 15px sandybrown;
+  margin: 35px auto 0 auto;
+  font-size: 0.9rem;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  background-color: white;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  width: 800px;
+  visibility: hidden;
 }
 
-a {
-  margin-right: 5px;
-}
-
-/* label focus color */
-.materialize-textarea:focus + label {
-  color: #42a5f5 !important;
-}
-
-/* label underline focus color */
-.materialize-textarea:focus {
-  border-bottom: 1px solid #42a5f5 !important;
-}
-
-td {
+thead tr {
+  background-color: #42a4f5da;
+  color: #ffffff;
   text-align: center;
-  border: 1px solid black;
-  background-color: snow;
+  font-weight: bold;
+}
+
+th, td {
+  padding: 12px;
+}
+
+tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:last-of-type {
+  border-bottom: 2px solid #42a4f5da;
 }
 
 i {
   padding-left: 10px;
-  color: #42a5f5;
+  color: #42a4f5da;
 }
 
 img {
   height: 1.5rem;
   padding-left: 10px;
   vertical-align: middle;
-  color: #42a5f5;
 }
 
 span {
@@ -103,4 +110,8 @@ span {
   margin-left: 10px;
   vertical-align: middle;
   border: 1.5px solid black;
+}
+
+.show {
+  visibility: visible;
 }

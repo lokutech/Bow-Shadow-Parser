@@ -1,7 +1,7 @@
 // sample = inset 0 1px 3px 5px rgba(0, 0, 0, 0.12), 0 1px 3px 15px #ffffff, inset 0 1px 3px 25px rgba(0, 0, 0, 0.12)
 
-let inputEl = document.querySelector('#textarea1')
-let thead = document.querySelector('thead')
+let inputEl = document.querySelector('#input')
+let table = document.querySelector('table')
 let tbody = document.querySelector('tbody')
 let button = document.querySelector('#button')
 const clear = document.querySelector('#clear')
@@ -11,11 +11,11 @@ const sample = document.querySelector('#sample')
 button.addEventListener('click', (e) => {
   e.preventDefault()
   if (inputEl.value) {
-    thead.className = 'show'
+    table.className = 'show'
     parseAll(inputEl.value.trim())
   } else {
     tbody.innerText = ''
-    thead.classList.remove('show')
+    table.classList.remove('show')
   }
 })
 
@@ -24,7 +24,7 @@ clear.addEventListener('click', (e) => {
   e.preventDefault()
   inputEl.value = null
   tbody.innerText = null
-  thead.classList.remove('show')
+  table.classList.remove('show')
 })
 
 // Sample
@@ -32,7 +32,7 @@ sample.addEventListener('click', (e) => {
   e.preventDefault()
   inputEl.value =
     'inset 5px 1px 3px 5px rgba(0, 0, 0, 0.12), -5rem -1px 3px 15px #ffffff, inset 0 1px 3px 25px rgba(0, 0, 0, 0.12)'
-  thead.className = 'show'
+  table.className = 'show'
   parseAll(inputEl.value.trim())
 })
 
