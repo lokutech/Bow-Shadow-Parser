@@ -1,5 +1,3 @@
-// sample = inset 0 1px 3px 5px rgba(0, 0, 0, 0.12), 0 1px 3px 15px #ffffff, inset 0 1px 3px 25px rgba(0, 0, 0, 0.12)
-
 let inputEl = document.querySelector('#input')
 let table = document.querySelector('table')
 let tbody = document.querySelector('tbody')
