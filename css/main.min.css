@@ -1,0 +1,106 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  margin: 50px auto;
+  width: 800px;
+  text-align: center;
+  background-color: #f3f3f3;
+}
+
+h1, h2, h3 {
+  margin-bottom: 30px;
+}
+
+p {
+  position: relative !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  margin-bottom: auto !important;
+  -webkit-box-align: end !important;
+      -ms-flex-align: end !important;
+          align-items: flex-end !important;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  height: 60px;
+}
+
+thead {
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 25px;
+  -webkit-box-shadow: 15px sandybrown;
+          box-shadow: 15px sandybrown;
+}
+
+a {
+  margin-right: 5px;
+}
+
+/* label focus color */
+.materialize-textarea:focus + label {
+  color: #42a5f5 !important;
+}
+
+/* label underline focus color */
+.materialize-textarea:focus {
+  border-bottom: 1px solid #42a5f5 !important;
+}
+
+td {
+  text-align: center;
+  border: 1px solid black;
+  background-color: snow;
+}
+
+i {
+  padding-left: 10px;
+  color: #42a5f5;
+}
+
+img {
+  height: 1.5rem;
+  padding-left: 10px;
+  vertical-align: middle;
+  color: #42a5f5;
+}
+
+span {
+  height: 15px;
+  width: 15px;
+  background-color: red;
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+  border: 1.5px solid black;
+}
