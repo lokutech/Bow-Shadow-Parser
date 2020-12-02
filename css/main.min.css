@@ -112,6 +112,13 @@ span {
   border: 1.5px solid black;
 }
 
+#github-logo img {
+  position: absolute;
+  height: 2rem;
+  right: 0px;
+  top: 20px;
+}
+
 .show {
   visibility: visible;
 }
