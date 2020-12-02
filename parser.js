@@ -120,13 +120,13 @@ function parseSingle(string) {
     // Blur Radius
     newRow.appendChild(document.createElement('td')).textContent = shadow.blurRadius
     let img = document.createElement('img')
-    img.src = '/blur.png'
+    img.src = 'blur.png'
     newRow.querySelector('td:last-of-type').appendChild(img)
 
     // Spread Radius
     newRow.appendChild(document.createElement('td')).textContent = shadow.spreadRadius
     img = document.createElement('img')
-    img.src = '/spread.png'
+    img.src = 'spread.png'
     newRow.querySelector('td:last-of-type').appendChild(img)
     
     // Color
