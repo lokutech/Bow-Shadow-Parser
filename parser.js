@@ -50,9 +50,8 @@ function parseSingle(string) {
     blurRadius: '-',
     spreadRadius: '-',
     color: '-',
-    type: 'Drop',
-    opacity: '100%',
-  }
+    type: 'Drop'
+   }
 
   // Put raw values into an array
   let values = string.split(/ (?![^\(]*\))/g)
@@ -137,9 +136,8 @@ function parseSingle(string) {
   }
 }
 
-// parseSingle(string)//?
-// parseAll(string)//?
-// REGEX Sources
-// line4 and line6: https://stackoverflow.com/questions/19943049/get-every-value-from-a-box-shadow-by-regex
+
+// REGEX Sources //
+// for parseAll function: https://stackoverflow.com/questions/19943049/get-every-value-from-a-box-shadow-by-regex
 // color match: https://gist.github.com/olmokramer/82ccce673f86db7cda5e#gistcomment-3227016
 
