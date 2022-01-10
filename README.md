@@ -1,4 +1,4 @@
-<a href="https://lokutech.github.io/Box-Shadow-Parser/">
+<a href="https://onattech.github.io/Box-Shadow-Parser/">
   <img src="https://img.shields.io/badge/Online_at_Github_Pages-success"  height="22">
 </a> 
 <a href="https://github.com/lokutech/Box-Shadow-Parser/blob/main/index.html">
